@@ -4,7 +4,7 @@ import icon from "@material-tailwind/react/Icon";
 
 function Header() {
   return (
-    <div className="flex items-center">
+    <div className="sticky top-0 z-50 flex items-center px-4 py-2 shadow-md bg-white">
       <Button
         color="blue"
         buttonType="outline"
@@ -14,11 +14,11 @@ function Header() {
         className=" h-20 w-20 border-0"
       >
         <Icon name="menu" size="3xl" />
-        <h1 className="hidden md:inline-flex ml-2 text-gray-700
-        text-2xl">
-            Docs
-        </h1>
       </Button>
+      <icon name="description" size="5xl" color="blue" />
+      <h1 className="hidden md:inline-flex ml-2 text-gray-700 text-2xl">
+        Docs
+      </h1>
     </div>
   );
 }
